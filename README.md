@@ -12,26 +12,26 @@
 </p>
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/aszecsei/hexchat/main/assets/sample.webp"/>
+	<img src="assets/sample.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/aszecsei/hexchat/main/assets/latte.png"/>
+<img src="assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/aszecsei/hexchat/main/assets/frappe.png"/>
+<img src="assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/aszecsei/hexchat/main/assets/macchiato.png"/>
+<img src="assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/aszecsei/hexchat/main/assets/mocha.png"/>
+<img src="assets/mocha.png"/>
 </details>
 
 ## Usage
