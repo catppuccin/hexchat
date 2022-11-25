@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+cp ${1}/colors.conf ${XDG_CONFIG_HOME:-$HOME/.config}/hexchat/colors.conf
