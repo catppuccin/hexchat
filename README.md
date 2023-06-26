@@ -48,7 +48,7 @@ Alternatively, for manual installation:
 2. Copy the desired `colors.conf` file to `$XDG_CONFIG_HOME/hexchat/` (usually this is `~/.config/hexchat`)
 	- For example: `cp frappe/colors.conf ~/.config/hexchat/colors.conf`
 
-## 🙋 FAQ (optional)
+## 🙋 FAQ
 -   Q: **_"Why doesn't all of HexChat match the theme?"_**\
 	A: HexChat themes only affect the panel backgrounds and text colors; to get the rest of the window to match you'll also need the [GTK](https://github.com/catppuccin/gtk) theme.
 -	Q: **_"Why isn't this working with flatpak?"_**\
