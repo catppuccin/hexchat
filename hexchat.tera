@@ -3,7 +3,7 @@ whiskers:
   version: "^2.3.0"
   matrix:
    - flavor
-  filename: "{{ flavor.identifier }}/colors.conf"
+  filename: "themes/{{ flavor.identifier }}/colors.conf"
 ---
 
 {%- macro format(color) -%}
