@@ -1,0 +1,30 @@
+---
+whiskers:
+  version: "^2.3.0"
+  matrix:
+   - flavor
+  filename: "{{ flavor.identifier }}/colors.conf"
+---
+
+{%- macro format(color) -%}
+{%- set parts = color.hex | split(pat="") -%}
+{% for x in [0, 2, 4] %}{% set part = parts | slice(start=x + 1, end=x+3) | join(sep="") %}{{ part ~ part }}{% if not loop.last %} {% endif %}{% endfor %}
+{%- endmacro -%}
+
+{%- set colors = [text, base, blue, green, red, base | mix(color=rosewater, amount=0.4), mauve, peach, yellow, green | add(lightness=21), teal, teal | add(lightness=21), sky, pink, surface2, overlay2] -%}
+{%- for color in colors | concat(with=colors) -%}
+color_{{ loop.index0 }} = {{ self::format(color=color) }}
+{%- if not loop.last %}
+{% endif %}
+{%- endfor %}
+
+color_256 = {{ self::format(color=text) }} {#- selected foreground #}
+color_257 = {{ self::format(color=surface2) }} {#- selected background #}
+color_258 = {{ self::format(color=text) }} {#- foreground #}
+color_259 = {{ self::format(color=base) }} {#- background #}
+color_260 = {{ self::format(color=overlay1) }} {#- interface marker line #}
+color_261 = {{ self::format(color=yellow) }} {#- interface new data #}
+color_262 = {{ self::format(color=green) }} {#- interface highlight #}
+color_263 = {{ self::format(color=blue) }} {#- interface new message #}
+color_264 = {{ self::format(color=overlay1) }} {#- interface away user #}
+color_265 = {{ self::format(color=maroon) }} {#- interface spell checker #}
